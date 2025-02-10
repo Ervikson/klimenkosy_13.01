@@ -1,0 +1,10 @@
+ - разрешено большое кол-во служб:
+    - ftp
+    - http
+    - telnet
+    - smtp
+    и т.д. подробнее на скриншоте
+Список уязвимостей:
+    - vsftpd 2.3.4 - Backdoor Command Execution (Metasploit) - https://www.exploit-db.com/exploits/17491
+    - UnrealIRCd 3.2.8.1 - Backdoor Command Execution (Metasploit) - https://www.exploit-db.com/exploits/16922
+    - Порты TCP 512, 513 и 514, известные как «r» сервисы, были неправильно настроены для удаленного доступа из любого хоста, то есть с помощью rsh-client можно подключиться к ВМ Metasploit, выполнив комманду rlogin -l root <IP-Metasploit>
